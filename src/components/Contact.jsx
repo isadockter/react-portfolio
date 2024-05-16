@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import aboutImg from '../assets/blueblop.jpg';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -23,35 +24,39 @@ const Contact = () => {
     };
 
     return (
-        <section className="mb-20 md:mx-auto flex justify-center" id="contact">
-            <form name="contact-form" className="max-w-md m-5 max-w-400" onSubmit={handleSubmit}>
-                <h2 className="md:text-4xl text-3xl mb-5">Let's Get in Touch!</h2>
+        <section className="mb-20 md:mx-auto flex justify-center items-center gap-8" id="contact">
+                     <div className='w-[400px]'>
+              <img src={aboutImg} alt="" />
+            </div>
+            <form name="contact-form" className="m-5 w-[440px]" onSubmit={handleSubmit}>
+                <h2 className="md:text-2xl text-xl mb-5">Let's Get in Touch!</h2>
                 <div className="grid md:grid-cols-1 md:gap-6">
                     <div className="relative z-0 w-full mb-5 group">
                         <input type="text" name="name" id="name" value={formData.name} onChange={handleChange}
-                            className="block py-2.5 px-0 w-full text-sm bg-transparent border-b-2 border-indigo-600 focus:outline-none focus:ring-0 focus:border-violet-600 peer"
+                            className="block py-2.5 px-0 w-full text-sm bg-transparent border-b border-indigo-800 focus:outline-none focus:ring-0 focus:border-violet-600 peer"
                             placeholder=" " required />
                         <label htmlFor="name"
-                            className="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+                            className="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
                     </div>
                 </div>
                 <div className="relative z-0 w-full mb-5 group">
                     <input type="email" name="email" id="email" value={formData.email} onChange={handleChange}
-                        className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 focus:outline-none focus:ring-0 focus:border-violet-600 peer"
+                        className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b border-indigo-800 focus:outline-none focus:ring-0 focus:border-violet-600 peer"
                         placeholder=" " required />
                     <label htmlFor="email"
-                        className="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                        className="peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
                         address</label>
                 </div>
                 <div className="relative z-0 w-full mb-5 group">
                     <textarea type="text" cols="3" name="message" id="message" value={formData.message} onChange={handleChange}
-                        className=" block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-indigo-950 focus:outline-none focus:ring-0 focus:border-violet-600 peer"
+                        className=" block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b border-indigo-800 focus:outline-none focus:ring-0 focus:border-violet-600 peer"
                         placeholder=" " required></textarea>
                     <label htmlFor="message"
-                        className="peer-focus:font-medium absolute text-sm text-indigo-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+                        className="peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-violet-600 peer-focus:dark:text-violet-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
                 </div>
-                <button type="submit" className="button m-2">Send</button>
+                <button type="submit" className="bg-gradient-to-r from-violet-500 via-indigo-600 to-blue-800 py-2 px-3 hover:bg-gradient-to-bl transition-all rounded-lg text-white">Send</button>
             </form>
+
         </section>
     );
 }

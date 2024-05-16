@@ -9,12 +9,11 @@ import Contact from './components/Contact';
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className=' scroll-smooth'>
       <Navbar />
-      <div className="mx-w-7xl mx-auto pt-20 px-6">
+      <div className="mx-w-7xl mx-auto pt-8 lg:pt-12 px-6">
         <Hero />
         <About />
         <Skills />
@@ -25,4 +24,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
