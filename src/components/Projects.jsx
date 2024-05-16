@@ -4,7 +4,7 @@ import { projects } from '../constants/index';
 const Projects = () => {
     console.log(projects)
     return (
-        <div className="mt-20 border-b border-neutral-700 mb-20 p-10 min-h-[800px]" id="projects">
+        <div className="mt-20 border-b border-neutral-700 mb-20 min-h-[800px]" id="projects">
             <div className="text-center">
                 <span className="border-b-2 text-violet-600 border-violet-600 h-6 text-xl font-semibold px-2 uppercase tracking-wide">Projects</span>
                 <p className='mx-0 lg:mx-36 mt-3 leading-8'>Through the process of strengething my skills, I have worked on a variety of projects including front and backend development & UI/UX. Focusing on the user and getting into the mind of a user navigating an interface has given me the tools to plan & build user-friendly, thoughtfully designed, entirely responsive interfaces.</p>

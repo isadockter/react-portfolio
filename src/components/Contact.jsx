@@ -24,12 +24,10 @@ const Contact = () => {
     };
 
     return (
-        <section className="mb-20 md:mx-auto flex justify-center items-center gap-8" id="contact">
-                     <div className='w-[400px]'>
-              <img src={aboutImg} alt="" />
-            </div>
+        <section className="mb-20 md:mx-auto flex flex-wrap-reverse justify-center items-center gap-8" id="contact">
+ 
             <form name="contact-form" className="m-5 w-[440px]" onSubmit={handleSubmit}>
-                <h2 className="md:text-2xl text-xl mb-5">Let's Get in Touch!</h2>
+                <h2 className="md:text-2xl text-xl mb-5 font-medium">Let's Get in Touch!</h2>
                 <div className="grid md:grid-cols-1 md:gap-6">
                     <div className="relative z-0 w-full mb-5 group">
                         <input type="text" name="name" id="name" value={formData.name} onChange={handleChange}
@@ -56,7 +54,9 @@ const Contact = () => {
                 </div>
                 <button type="submit" className="bg-gradient-to-r from-violet-500 via-indigo-600 to-blue-800 py-2 px-3 hover:bg-gradient-to-bl transition-all rounded-lg text-white">Send</button>
             </form>
-
+            <div className='w-[400px]'>
+                <img src={aboutImg} alt="" />
+            </div>
         </section>
     );
 }

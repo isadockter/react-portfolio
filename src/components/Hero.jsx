@@ -24,14 +24,14 @@ const Hero = () => {
                         I'm passionate about both  Front-End Web Development & UI/UX Design. </p>
                     <div>
                         {/* github/linkedin links */}
-                        <div className='flex mb-6 items-center gap-4'>
+                        <div className='flex mb-6 items-center gap-3'>
                             {icons.map((item, index) => (
-                                <a className="hover:scale-125 transition-all" href={item.url} target="_blank" key={index}>{item.icon}</a>
+                                <a className="hover:scale-110 transition-all" href={item.url} target="_blank" key={index}>{item.icon}</a>
                             ))}
-                            <a className="text-blue-500 hover:text-blue-300 border px-2 rounded-sm border-blue-500" href="/react-portfolio/src/assets/isa-dockter-resume.pdf" title="" download>Resume</a>
+                            <a className="hover:scale-110 transition-all text-blue-500 hover:text-blue-300 border-2 px-2 rounded-md border-blue-500" href="/react-portfolio/src/assets/isa-dockter-resume.pdf" title="" download>Resume</a>
                         </div>
                         {/* tech skills */}
-                        <h4 className='uppercase tracking-wider text-violet-500'>skills</h4>
+                        <h4 className='uppercase tracking-wider text-violet-500 font-medium'>skills</h4>
                         <div className='flex flex-wrap gap-4'>
                             {skills.map((item, index) => (
                                 <div className='flex flex-col justify-center' key={index}>

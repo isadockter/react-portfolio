@@ -1,5 +1,5 @@
 import proj1 from '../assets/p1.png';
-import proj2 from '../assets/p1.png';
+import proj2 from '../assets/p2.png';
 
 //------------------------------------------------
 // NAVITEMS - label, href

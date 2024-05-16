@@ -16,8 +16,8 @@ const About = () => {
                     </div>
                     <div className="w-full lg:w-1/2">
                         <div className='mb-4 border-b border-neutral-700 pb-6'>
-                            <h2 className='text-2xl lg:text-3xl'>About Me</h2>
-                            <p className='text-md lg:text-l leading-8'>I have always had a passion for art, taking as many art classes as I could & even continuing to pursue it after high school. Within the huge world of informatics and computing, I found that art fits really nicely into what I want to pursue. </p>
+                            <h2 className='text-xl lg:text-2xl font-medium'>About Me</h2>
+                            <p className='text-md lg:text-l leading-8 pb-2'>I have always had a passion for art, taking as many art classes as I could & even continuing to pursue it after high school. Within the huge world of informatics and computing, I found that art fits really nicely into what I want to pursue. </p>
                             <p className='text-md lg:text-l leading-8'>Outside of school, I enjoy listening to music, rollerskating, hanging out with friends, and relaxing with my cat.</p>
                         </div>
                         <Tabs />
