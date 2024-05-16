@@ -3,11 +3,11 @@ import Tabs from './Tabs';
 
 const About = () => {
     return (
-        <div>
+        <div id="about">
             <div className="mt-20 border-b border-neutral-700 pb-20">
 
 
-                <div className="flex flex-wrap justify-center gap-8">
+                <div className="flex flex-wrap-reverse justify-center gap-8">
                     <div className="grid grid-cols-2 gap-2 max-w-[400px] lg:w-1/3">
                         <img src={aboutImg} alt="code image 1" />
                         <img src={aboutImg} alt="code image 2" />
@@ -21,7 +21,6 @@ const About = () => {
                             <p className='text-md lg:text-l leading-8'>Outside of school, I enjoy listening to music, rollerskating, hanging out with friends, and relaxing with my cat.</p>
                         </div>
                         <Tabs />
-
                     </div>
                 </div>
             </div>

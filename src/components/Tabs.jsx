@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Tabs = () => {
-  // State to track the active tab
+  // tracks the active tab
   const [activeTab, setActiveTab] = useState('tab1');
 
-  // Function to handle tab change
+  // handles change to active/nonactive tab
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
@@ -45,10 +45,10 @@ const Tabs = () => {
               <li>ayo</li>
             </ul>
           </div>}
-        {activeTab === 'tab2' && 
+        {activeTab === 'tab2' &&
           <div>
             <h3>Indiana University Bloomington Luddy School of Informatics, Engineering, and Computing</h3>
-             
+
             <h3>Awards</h3>
             <ul className='text-sm ml-4 mb-2'>
               <li>Luddy Dean's List (FA2022, SP2023, FA2023)</li>
