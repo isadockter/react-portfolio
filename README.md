@@ -1,6 +1,6 @@
 # Isa Dockter's Portfolio Website
 
-[see portfolio here!](https://www.isadockter.com/)
+[see portfolio here!](https://www.isadockter.com/) <br>
 I built this portfolio website to showcase my skills, projects, and experience in web development and UI/UX design. It serves as a professional online presence where potential employers and collaborators can learn more about me and my work.
 
 ## Table of Contents
