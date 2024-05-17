@@ -1,5 +1,4 @@
-import heroImg from '../assets/headshot.jpeg';
-import html from '../assets/html-icon.png';
+import heroImg from '../assets/headshot.jpg';
 import { skills, icons } from '../constants/index';
 import Typewriter from 'typewriter-effect';
 

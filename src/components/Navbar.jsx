@@ -37,7 +37,7 @@ const Navbar = () => {
                     </div>
 
                     {/* MOBILE/SMALL/MEDIUM VIEW WIDTH NAV */}
-                    <div className="lg:hidden md:flex flex-col justify-end">
+                    <div className="lg:hidden md:flex flex-row items-center justify-end">
                         <DarkModeToggle />
                         <button className="ml-4" onClick={toggleNav}>
                             {mobileDrawerOpen ? <X /> : < Menu />}
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {mobileDrawerOpen && (
-                    <div className="fixed right-0 z-20 w-100 mx-1 flex flex-col justify-center rounded-md border border-violet-800 items-center lg:hidden bg-violet-200 dark:bg-violet-500 mt-4">
+                    <div className="fixed right-0 z-20 w-100 mx-1 flex flex-col justify-center rounded-md border border-violet-800 items-center lg:hidden bg-violet-200 mt-4">
                         <ul className="text-center">
                             {navItems.map((item, index) => (
                                 <li key={index} className="py-3 text-violet-800 hover:text-blue-600 hover:scale-105 transition-all">
