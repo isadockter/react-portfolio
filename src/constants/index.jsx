@@ -1,11 +1,16 @@
 import proj1 from '../assets/p1.png';
 import proj2 from '../assets/p2.png';
+import proj3 from '../assets/lol.png';
+import mproj1 from '../assets/mp1.png';
+import mproj2 from '../assets/mp2.png';
+import mproj3 from '../assets/mp3.png';
+
 
 //------------------------------------------------
 // NAVITEMS - label, href
 //------------------------------------------------
 export const navItems = [
-  { label: "Home", href: "index.html" },
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" }
 ];
@@ -113,8 +118,28 @@ export const projects = [
     category: "UI/UX",
     description: "EcoU is designed to address the critical issue of recycling accessibility and education. We simply recycling by providing city regulations, comphrensive recycling information, and a map feature showcasing nearby recycling centers and bins.",
     technologies: ["Figma", "Miro", "DataScraper"],
-    projectImg: proj2,
+    projectImg: proj3,
     otherLink: "https://zion.luddy.indiana.edu/info-i370-fa23/Sathvica-Group%2004",
-
   },
+];
+
+export const minis = [
+  {
+    title: "Writing Motivation",
+    technologies: ["HTML", "CSS", "JavaScript", "APIs"],
+    projectImg: mproj1,
+    demoLink: "https://isadockter.github.io/writing-motivation/"
+  },
+  {
+    title: "Interact.net",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    projectImg: mproj2,
+    demoLink: "https://isadockter.github.io/final-art-project/"
+  },
+  {
+    title: "Random Number Game",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    projectImg: mproj3,
+    demoLink: "https://isadockter.github.io/random-num/"
+  }
 ];

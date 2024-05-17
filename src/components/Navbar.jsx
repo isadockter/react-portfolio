@@ -30,7 +30,7 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <div className="hidden lg:flex justify-center space-x-12 items-center">
-                        <a href="#" className="bg-gradient-to-r from-violet-500 via-indigo-600 to-blue-800 py-2 px-3 hover:bg-gradient-to-bl transition-all rounded-lg text-white">
+                        <a href="#contact" className="bg-gradient-to-r from-violet-500 via-indigo-600 to-blue-800 py-2 px-3 hover:bg-gradient-to-bl transition-all rounded-lg text-white">
                             Contact
                         </a>
                         <DarkModeToggle />
@@ -45,16 +45,16 @@ const Navbar = () => {
                     </div>
                 </div>
                 {mobileDrawerOpen && (
-                    <div className="fixed right-0 z-20 w-100 flex flex-col justify-center items-center lg:hidden">
-                        <ul className="mt-4">
+                    <div className="fixed right-0 z-20 w-100 mx-1 flex flex-col justify-center rounded-md border border-violet-800 items-center lg:hidden bg-violet-200 dark:bg-violet-500 mt-4">
+                        <ul className="text-center">
                             {navItems.map((item, index) => (
-                                <li key={index} className="py-3 hover:text-violet-400 hover:scale-105 transition-all">
+                                <li key={index} className="py-3 text-violet-800 hover:text-blue-600 hover:scale-105 transition-all">
                                     <a href={item.href}>{item.label}</a>
                                 </li>
                             ))}
                         </ul>
-                        <div className="flex space-x-6 pt-2">
-                            <a href="#" className="border rounded-lg bg-gradient-to-r from-violet-500 via-indigo-600 to-blue-800 py-2 px-3 hover:bg-gradient-to-bl transition-all text-white"> Contact</a>
+                        <div className="flex space-x-6 p-2">
+                            <a href="#contact" className="border rounded-lg bg-gradient-to-r from-violet-500 via-indigo-600 to-blue-800 py-2 px-3 hover:bg-gradient-to-bl hover:scale-105 transition-all text-white"> Contact</a>
                         </div>
                     </div>
                 )}

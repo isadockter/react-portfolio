@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
     return (
-        <div className='border-b border-neutral-700 pb-20'>
+        <div className='border-b border-neutral-700 pb-20' id="home">
             <div className="flex flex-wrap justify-center ">
                 <div className="p-2 w-100 lg:w-1/2 mt-0 mx-0 lg:mx-0 lg:mt-20">
                     <h1 className="text-xl" >Hello! I'm <span className='text-2xl font-medium bg-gradient-to-r from-violet-500 to-indigo-800 text-transparent bg-clip-text'>Isa Dockter</span> </h1>
