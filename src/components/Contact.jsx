@@ -30,7 +30,7 @@ const Contact = () => {
         <section className="mb-20 md:mx-auto flex flex-wrap-reverse justify-center items-center gap-8" id="contact">
 
             <div>
-                <form name="contact-form" className="m-5 w-[440px]" onSubmit={handleSubmit}>
+                <form name="contact-form" className="m-5 max-w-[440px]" onSubmit={handleSubmit}>
                     <h2 className="md:text-2xl text-xl mb-5 font-medium">Let's Get in Touch!</h2>
                     <div className="grid md:grid-cols-1 md:gap-6">
                         <div className="relative z-0 w-full mb-5 group">
