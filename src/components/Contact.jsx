@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import aboutImg from '../assets/blueblop.jpg';
+import blob1 from '../assets/blob.png';
 import { Mail } from 'lucide-react';
 import { icons } from '../constants/index';
 
@@ -28,9 +28,12 @@ const Contact = () => {
 
     return (
         <section className="mb-20 md:mx-auto flex flex-wrap-reverse justify-center items-center gap-8" id="contact">
-
-            <div>
-                <form name="contact-form" className="m-5 max-w-[440px]" onSubmit={handleSubmit}>
+           <div className='w-[400px] hover:bg-gradient-to-t bg-gradient-to-b transition-all from-violet-500 via-indigo-600 to-blue-800 rounded-3xl'>
+            <span className='mx-6 my-2 text-xs text-white'>Thank you! </span>
+                <img className='hover:skew-y-6 transition-all motion-safe:animate-pulse hover:scale-75' src={blob1} alt="" />
+            </div>
+            <div className='max-w-[600px] lg:w-[550px]'>
+                <form name="contact-form" className="m-5" onSubmit={handleSubmit}>
                     <h2 className="md:text-2xl text-xl mb-5 font-medium">Let's Get in Touch!</h2>
                     <div className="grid md:grid-cols-1 md:gap-6">
                         <div className="relative z-0 w-full mb-5 group">
@@ -70,9 +73,7 @@ const Contact = () => {
 
                 </form>
             </div>
-            <div className='w-[400px]'>
-                <img src={aboutImg} alt="" />
-            </div>
+
         </section>
     );
 }

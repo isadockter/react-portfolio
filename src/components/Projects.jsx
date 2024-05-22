@@ -1,15 +1,13 @@
-import projImg from '../assets/p1.png';
 import { projects, minis } from '../constants/index';
 
 const Projects = () => {
-    console.log(projects, minis)
     return (
         <div className="mt-20 border-b border-neutral-700 mb-20 min-h-[800px]" id="projects">
             <div className="text-center">
                 <span className="border-b-2 text-violet-600 border-violet-600 h-6 text-xl font-semibold px-2 uppercase tracking-wide">Projects</span>
                 <p className='mx-0 lg:mx-36 mt-3 leading-8'>Through the process of strengething my skills, I have worked on a variety of projects including front and backend development & UI/UX. Focusing on the user and getting into the mind of a user navigating an interface has given me the tools to plan & build user-friendly, thoughtfully designed, entirely responsive interfaces.</p>
             </div>
-
+            {/* PROJECTS */}
             <div className="flex flex-col justify-center mt-6 lg:mt-10">
                 {projects.map((project, index) => (
                     <div className="flex flex-wrap justify-center gap-12 mb-12 min-h-72 border-b pb-12 w-100" key={index}>
@@ -39,30 +37,27 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
+            {/* MINI PROJECTS */}
             <div className="text-center">
-
                 <span className="border-b-2 text-violet-600 border-violet-600 h-6 text-xl font-semibold px-2 uppercase tracking-wide">MINI Projects</span>
                 <p className='mx-0 lg:mx-36 mt-3 leading-8'>Additionally, I've explored various mini projects that showcase my creativity and coding abilities, ranging from interactive web applications to fun games, each designed with user engagement and experience in mind.</p>
-
-            </div>
-
+            </div>             
             <div className='flex flex-wrap justify-center gap-8 mb-10'>
                 {minis.map((mini, index) => (
                     <a href={mini.demoLink} target="_blank">
-                    <div class="max-w-[360px] rounded overflow-hidden hover:scale-105 transition-all cursor-pointer" key={index}>
-                        <img src={mini.projectImg} alt={mini.title} />
-                        <div class="px-6">
-                            <span class="font-medium text-xl">{mini.title}</span>
+                        <div class="max-w-[360px] rounded overflow-hidden hover:scale-105 transition-all cursor-pointer" key={index}>
+                            <img src={mini.projectImg} alt={mini.title} />
+                            <div class="px-6">
+                                <span class="font-medium text-xl">{mini.title}</span>
+                            </div>
+                            <div class="px-6 pt-0 pb-2 flex flex-wrap">
+                                {mini.technologies.map((tech, techIndex) => (
+                                    <p className="border-2 p-1 px-2 text-sm mx-2 my-2" key={techIndex}>{tech}</p>
+                                ))}
+                            </div>
                         </div>
-                        <div class="px-6 pt-0 pb-2 flex flex-wrap">
-                            {mini.technologies.map((tech, techIndex) => (
-                                <p className="border-2 p-1 px-2 text-sm mx-2 my-2" key={techIndex}>{tech}</p>
-                            ))}
-                        </div>
-                    </div>
                     </a>
                 ))}
-
             </div>
         </div>
     )

@@ -1,10 +1,9 @@
 import proj1 from '../assets/p1.png';
 import proj2 from '../assets/p2.png';
-import proj3 from '../assets/lol.png';
+import proj3 from '../assets/p4.png';
 import mproj1 from '../assets/mp1.png';
 import mproj2 from '../assets/mp2.png';
 import mproj3 from '../assets/mp3.png';
-
 
 //------------------------------------------------
 // NAVITEMS - label, href
@@ -103,6 +102,8 @@ export const projects = [
     projectImg: proj1,
     codeLink: "https://github.iu.edu/info-capstone-2024/team-36",
     demoLink: "https://cgi.luddy.indiana.edu/~team36/index.php",
+    otherLink: "https://zion.luddy.indiana.edu/info-capstone-2024/healthy-bytes",
+
   },
   {
     title: "Outdoor Adventures",
@@ -123,6 +124,9 @@ export const projects = [
   },
 ];
 
+//------------------------------------------------
+// MINI PROJECTS - title, technologies, projectImg, demoLink
+//------------------------------------------------
 export const minis = [
   {
     title: "Writing Motivation",

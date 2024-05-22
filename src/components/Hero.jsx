@@ -27,7 +27,7 @@ const Hero = () => {
                             {icons.map((item, index) => (
                                 <a className="hover:scale-110 transition-all" href={item.url} target="_blank" key={index}>{item.icon}</a>
                             ))}
-                            <a className="hover:scale-110 transition-all text-blue-500 hover:text-blue-300 border-2 px-2 rounded-md border-blue-500" href="/react-portfolio/src/assets/isa-dockter-resume.pdf" title="" download>Resume</a>
+                            <a className="hover:scale-110 transition-all text-blue-500 border-2 px-2 rounded-md border-blue-500" href="../isa-dockter-resume.pdf" download>Resume</a>
                         </div>
                         {/* tech skills */}
                         <h4 className='uppercase tracking-wider text-violet-500 font-medium'>skills</h4>
