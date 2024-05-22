@@ -17,9 +17,9 @@ const About = () => {
                 <div className="flex flex-wrap-reverse justify-center gap-8">
                     <div className="grid grid-cols-2 gap-2 max-w-[400px] lg:w-1/3">
                         <HoverImg imageUrl={about1} text="My Cat, Reece <3" />
-                        <HoverImg imageUrl={about2} text="SureGrip Boardwalk Rollerskates are solid beginner skates! :)" />
+                        <HoverImg imageUrl={about2} text="SureGrip Boardwalk Rollerskates are solid beginner skates! My Go-To :)" />
                         <HoverImg imageUrl={about4} text="Some printmaking!" />
-                        <HoverImg imageUrl={about3} text="Reece and I just relaxing" />
+                        <HoverImg imageUrl={about3} text="Reece and I chillin " />
                     </div>
                     <div className="w-full lg:w-1/2">
                         <div className='mb-2 border-b border-neutral-700 pb-2'>
