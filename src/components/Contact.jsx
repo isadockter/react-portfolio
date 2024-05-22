@@ -28,10 +28,10 @@ const Contact = () => {
 
     return (
         <section className="mb-20 md:mx-auto flex flex-wrap-reverse justify-center items-center gap-8" id="contact">
-           <div className='w-[400px] hover:bg-gradient-to-t bg-gradient-to-b transition-all from-violet-500 via-indigo-600 to-blue-800 rounded-3xl'>
-            <span className='mx-6 my-2 text-xs text-white'>Thank you! </span>
+            {/* <div className='w-[400px] hover:bg-gradient-to-t bg-gradient-to-b transition-all from-violet-500 via-indigo-600 to-blue-800 rounded-full'>
+                <span className='mx-6 my-2 text-xs text-white'>Thank you! </span>
                 <img className='hover:skew-y-6 transition-all motion-safe:animate-pulse hover:scale-75' src={blob1} alt="" />
-            </div>
+            </div> */}
             <div className='max-w-[600px] lg:w-[550px]'>
                 <form name="contact-form" className="m-5" onSubmit={handleSubmit}>
                     <h2 className="md:text-2xl text-xl mb-5 font-medium">Let's Get in Touch!</h2>
@@ -62,13 +62,13 @@ const Contact = () => {
                     <button type="submit" className="bg-gradient-to-r from-violet-500 via-indigo-600 to-blue-800 py-2 px-3 hover:bg-gradient-to-bl transition-all rounded-lg text-white">Send</button>
 
                     <div className='mt-8 border-t pt-4 flex flex-col gap-6'>
-                    <p className='text-sm font-extralight'>Fill out the form above or reach out via email or linkedin</p>
+                        <p className='text-sm font-extralight'>Fill out the form above or reach out via email or linkedin</p>
                         <div className='flex gap-8'>
-                        <p className='flex font-light items-center'><Mail size="26px" className='mr-2' /> isadockter@gmail.com</p>
-                        <a className="hover:scale-110 transition-all" href={icons[0]['url']} target="_blank">{icons[0]['icon']}</a>
+                            <p className='flex font-light items-center'><Mail size="26px" className='mr-2' /> isadockter@gmail.com</p>
+                            <a className="hover:scale-110 transition-all" href={icons[0]['url']} target="_blank">{icons[0]['icon']}</a>
 
                         </div>
-                        
+
                     </div>
 
                 </form>
